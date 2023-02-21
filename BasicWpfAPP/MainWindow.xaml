@@ -1,0 +1,16 @@
+﻿<Window x:Class="BasicWpfAPP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasicWpfAPP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="120,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="407" Height="27"/>
+        <Button x:Name="button1" Content="Click me" HorizontalAlignment="Left" Margin="120,120,0,0" VerticalAlignment="Top" Height="34" Width="228" Click="button1_Click"/>
+        <CheckBox x:Name="checkbox1" Content="CheckBox" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Height="34" Width="75" IsChecked="False" RenderTransformOrigin="0.585,1.817" IsEnabled="False"/>
+        <TextBlock x:Name="textblock1" HorizontalAlignment="Left" Margin="120,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="407"/>
+        <Label x:Name="label1" Content="WPF TESTING" HorizontalAlignment="Left" Height="29" Margin="271,26,0,0" VerticalAlignment="Top" Width="308"/>
+    </Grid>
+</Window>
