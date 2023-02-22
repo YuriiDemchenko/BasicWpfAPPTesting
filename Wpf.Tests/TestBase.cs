@@ -79,20 +79,20 @@ namespace Wpf.Tests
             winAppDriverProcess = Process.Start(psi);
         }
 
-        //protected void SelectAllText()
-        //{
-        //    Actions action = new Actions(AppSession);
-        //    action.KeyDown(Keys.Control).SendKeys("a");
-        //    action.KeyUp(Keys.Control);
-        //    action.Perform();
-        //}
+        protected void SelectAllText()
+        {
+            Actions action = new Actions(AppSession);
+            action.KeyDown(Keys.Control).SendKeys("a");
+            action.KeyUp(Keys.Control);
+            action.Perform();
+        }
 
-        //protected void PerformDelete()
-        //{
-        //    Actions action = new Actions(AppSession);
-        //    action.SendKeys(Keys.Delete);
-        //    action.Perform();
-        //}
+        protected void PerformDelete()
+        {
+            Actions action = new Actions(AppSession);
+            action.SendKeys(Keys.Delete);
+            action.Perform();
+        }
 
         //protected void PerformEnter()
         //{
@@ -101,11 +101,11 @@ namespace Wpf.Tests
         //    action.Perform();
         //}
 
-        //protected void WriteText(string text)
-        //{
-        //    Actions action = new Actions(AppSession);
-        //    action.SendKeys(text);
-        //    action.Perform();
-        //}
+        protected void WriteText(string text)
+        {
+            Actions action = new Actions(AppSession);
+            action.SendKeys(text);
+            action.Perform();
+        }
     }
 }

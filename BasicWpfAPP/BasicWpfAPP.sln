@@ -9,6 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Tests", "..\Wpf.Tests\W
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{284DDA71-ED3C-49B0-817D-BE2A5C634D7F}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		..\Wpf.Tests\TestBaseExtensions.cs = ..\Wpf.Tests\TestBaseExtensions.cs
 	EndProjectSection
 EndProject

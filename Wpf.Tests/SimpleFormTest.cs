@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using System.Threading;
 
 namespace Wpf.Tests
@@ -9,13 +10,13 @@ namespace Wpf.Tests
         [TestInitialize]
         public void TestInitialize()
         {
-            this.Initialize();
+            Initialize();
         }
 
         [TestCleanup]
         public void TestCleanup()
         {
-            this.Cleanup();
+            Cleanup();
         }
 
         [ClassCleanup]
@@ -27,22 +28,32 @@ namespace Wpf.Tests
         [TestMethod]
         public void ButtonClick()
         {
-            this.GetTextField().SendKeys("Deedg");
+            this.GetTextField().SendKeys("Newcomer");
             this.GetButtonSend().Click();
+            Assert.AreEqual(this.GetTextBlock().Text, "Hello Newcomer");
         }
 
         [TestMethod]
         public void CheckCheckbox()
         {
-            var found = this.GetCheckboxStatus();
             this.GetButtonSend().Click();
-            Assert.IsTrue(found.Enabled);
+            Assert.IsTrue(this.GetCheckboxStatus().Enabled);
         }
 
         [TestMethod]
         public void CheckTitle()
         {
             Assert.AreEqual(this.GetLabel().Text, "WPF TESTING");
+        }
+
+        [TestMethod]
+        public void TextFieldDeleteTextTest()
+        {
+            this.GetTextField().SendKeys("Some text to delete");
+            Thread.Sleep(1000);
+            this.SelectAllText();
+            this.PerformDelete();
+            Assert.AreEqual(this.GetTextField().Text, "");
         }
     }
 }

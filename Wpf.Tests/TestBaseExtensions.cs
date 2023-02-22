@@ -8,6 +8,7 @@ namespace Wpf.Tests
     public static class TestsBaseExtensions
     {
         private const string textBox = "textbox1";
+        private const string textBlock = "textblock1";
         private const string checkBox = "checkbox1";
         private const string buttonSend = "button1";
         private const string title = "label1";
@@ -16,6 +17,12 @@ namespace Wpf.Tests
         {
             return testsBase.AppSession.FindElementByAccessibilityId(textBox);
         }
+
+        public static WindowsElement GetTextBlock(this TestsBase testsBase)
+        {
+            return testsBase.AppSession.FindElementByAccessibilityId(textBlock);
+        }
+
         public static WindowsElement GetCheckboxStatus(this TestsBase testsBase)
         {
             return testsBase.AppSession.FindElementByAccessibilityId(checkBox);
