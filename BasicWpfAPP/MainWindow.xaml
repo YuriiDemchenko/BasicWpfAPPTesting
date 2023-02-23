@@ -12,5 +12,37 @@
         <CheckBox x:Name="checkbox1" Content="CheckBox" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Height="34" Width="75" IsChecked="False" RenderTransformOrigin="0.585,1.817" IsEnabled="False"/>
         <TextBlock x:Name="textblock1" HorizontalAlignment="Left" Margin="120,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="407"/>
         <Label x:Name="label1" Content="WPF TESTING" HorizontalAlignment="Left" Height="29" Margin="271,26,0,0" VerticalAlignment="Top" Width="308"/>
+        <ToolBar x:Name="ToolBar1" HorizontalAlignment="Left" Height="78" Margin="120,253,0,0" VerticalAlignment="Top" Width="595">
+            <Button Content="button without id" HorizontalAlignment="Left" VerticalAlignment="Top" Height="72" Width="197"/>
+        </ToolBar>
+        <ToolBar HorizontalAlignment="Left" Height="60" Margin="115,352,0,0" VerticalAlignment="Top" Width="595">
+            <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120">
+                <ComboBoxItem Content="Item1"/>
+                <ComboBoxItem Content="Item2"/>
+                <ComboBoxItem Content="Item3"/>
+                <ComboBoxItem Content="item4"/>
+            </ComboBox>
+            <ComboBox VerticalAlignment="Top" Width="120">
+                <ComboBoxItem Content="Item1"/>
+                <ComboBoxItem Content="Item2"/>
+                <ComboBoxItem Content="Item3"/>
+                <ComboBoxItem Content="item4"/>
+            </ComboBox>
+            <ComboBox VerticalAlignment="Top" Width="120">
+                <ComboBoxItem Content="Item1"/>
+                <ComboBoxItem Content="Item2"/>
+                <ComboBoxItem Content="Item3"/>
+                <ComboBoxItem Content="item4"/>
+            </ComboBox>
+            <ComboBox VerticalAlignment="Top" Width="120">
+                <ComboBoxItem Content="Item1"/>
+                <ComboBoxItem Content="Item2"/>
+                <ComboBoxItem Content="Item3"/>
+                <ComboBoxItem Content="item4"/>
+            </ComboBox>
+        </ToolBar>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="120,211,0,0" TextWrapping="Wrap" Text="SomeText" VerticalAlignment="Top" Width="88"/>
+        <TextBox HorizontalAlignment="Left" Margin="213,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="37" Text="TextToFind"/>
+        <TextBox HorizontalAlignment="Left" Margin="400,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="37"/>
     </Grid>
 </Window>

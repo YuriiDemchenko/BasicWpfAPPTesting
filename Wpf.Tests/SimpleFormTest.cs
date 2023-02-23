@@ -55,5 +55,23 @@ namespace Wpf.Tests
             this.PerformDelete();
             Assert.AreEqual(this.GetTextField().Text, "");
         }
+
+        [TestMethod]
+        public void FindButtonWithoutId()
+        {
+            this.GetButtonWithoutId().Click();
+        }
+
+        [TestMethod]
+        public void FindComboBoxWithoutId()
+        {
+            this.GetComboBoxWithoutId().Click();
+        }
+
+        [TestMethod]
+        public void FindTextBoxWithoutId()
+        {
+            this.GetTextBoxWithoutId().SendKeys("Hello there");
+        }
     }
 }

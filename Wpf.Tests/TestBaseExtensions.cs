@@ -13,6 +13,21 @@ namespace Wpf.Tests
         private const string buttonSend = "button1";
         private const string title = "label1";
 
+        public static WindowsElement GetTextBoxWithoutId(this TestsBase testsBase)
+        {
+            return testsBase.AppSession.FindElementByXPath("//Text[@Name='SomeText']/following-sibling::Edit[1]");
+        }
+
+        public static WindowsElement GetComboBoxWithoutId(this TestsBase testsBase)
+        {
+            return testsBase.AppSession.FindElementByXPath("//*[@ClassName='ToolBar']/ComboBox[1]");
+        }
+
+        public static WindowsElement GetButtonWithoutId(this TestsBase testsBase)
+        {
+            return testsBase.AppSession.FindElementByXPath("//*[@AutomationId='ToolBar1']/Button[1]");
+        }
+
         public static WindowsElement GetTextField(this TestsBase testsBase)
         {
             return testsBase.AppSession.FindElementByAccessibilityId(textBox);
